@@ -25,6 +25,10 @@ export function withdrawal_oneid(scenario) {
   };
 
   const response = http.post(url, payload, params);
+  if (response.status === 400 || response.status === 500) {
+    console.log('❌ Request payload:', payload);
+    console.log('❌ Response body:', response.body);
+  }
 
   //console.log('Response body:', response.body);
 

@@ -4,17 +4,17 @@ import { error_check } from '../check/check.js';
 import { scenario } from 'k6/execution';
 import { withdrawal } from '../api/withdrawal.js';
 import { withdrawal_oneid } from '../api/withdrawal_oneid.js';
-//import { callback } from '../api/callback.js';
+import { callback } from '../api/callback.js';
 
 
 
 //============================================================================
 
 export default function () {    //เรียกใช้ API ใน export default function
-  response = withdrawal(scenario)
+  //response = withdrawal(scenario)
   //response = withdrawal_oneid(scenario)
-  //response = callback()
-  
+  response = callback(scenario)
+
   error_check(response);
 
   sleep(1)
