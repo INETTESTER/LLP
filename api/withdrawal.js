@@ -24,6 +24,14 @@ export function withdrawal(scenario) {
   };
 
   const response = http.post(url, payload, params);
+  // if (!response || response.error_code || (response.status !== 200 && response.status !== 201 && response.status !== 204)) {
+  //   console.log('❌ Request payload:', payload);
+  //   console.log('❌ Response body:', response.body);
+  // }
+  if (response.status === 400) {
+    console.log('❌ Request payload:', payload);
+    console.log('❌ Response body:', response.body);
+  }
 
   //console.log('Response body:', response.body);
 

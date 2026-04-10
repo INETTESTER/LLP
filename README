@@ -1,2 +1,4 @@
 git fetch origin  # ดึงข้อมูลล่าสุดจาก remote repository
 git reset --hard origin/main  # รีเซ็ตให้เหมือนกับเวอร์ชันล่าสุดใน GitHub
+203.150.75.137 llpbackoffice-api-test.one.th
+C:\windows\system32\drivers\etc\hosts

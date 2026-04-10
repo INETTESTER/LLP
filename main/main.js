@@ -14,9 +14,9 @@ export default function () {    //เรียกใช้ API ใน export def
   response = withdrawal(scenario)
   //response = withdrawal_oneid(scenario)
   //response = callback()
-
-
+  
   error_check(response);
+
   sleep(1)
 }
 

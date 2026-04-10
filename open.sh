@@ -4,12 +4,12 @@
 ##########################################################################
 ##########################################################################
 ##########################################################################
-                     API="template" 
+                     API="withdrawal" 
                      google_sheet="https://docs.google.com/spreadsheets/d/1lmHM0MZmz3KO7-UHtuym-aKtLy5e5KWzYLuUB2AGE7k/edit?gid=158997130#gid=158997130" 
-                     id="1"                 #เปลี่ยน id ทุกครั้งที่ยิง
-                     user="1";            #จำนวนผู้ใช้งาน
-                     duration="1";         #วินาที
-                     scenario="1"           #scenario="1" ยิงเเบบกำหนด request (duration ได้แค่ 1 วินาที)
+                     id="6"                 #เปลี่ยน id ทุกครั้งที่ยิง
+                     user="10000";            #จำนวนผู้ใช้งาน
+                     duration="300";         #วินาที
+                     scenario="3"           #scenario="1" ยิงเเบบกำหนด request (duration ได้แค่ 1 วินาที)
                      cid="1"                #scenario="2" ยิงเเบบกำหนด VUs  (กำหนดว่า user x คน ใช้ระบบ x วินาที)
                                             #scenario="3" ยิงเเบบกำหนด request แต่ไม่แม่นยำ (duration กี่วินาทีก็ได้)
                      status="normal"        #พิมพ์คำว่า "normal" เพื่อยิงโหลดเเละ upload report ไปที่ sheet
